@@ -9,13 +9,14 @@
     header {
         display: block;
     }
+    
 }
 
 /* ******BELOW820px*******/
 @media (max-width: 820px) {
 
     html {
-        font-size: 55%;
+        font-size: 60%;
     }
 
     .mobileHeader {
@@ -59,27 +60,25 @@
     }
 
     #about {
-        scroll-margin-top: 0;
+        scroll-margin-top: 10vh;
     }
 
     #contactContent .contactInfo .contactForm {
         margin-top: -4%;
     }
+    .projects .projectsContainer .project {
+        flex-direction: column;}
 
 }
 
 /* ******BELOW750px*******/
 @media (max-width: 750px) {
     html {
-        font-size: 52%;
+        font-size: 56%;
     }
 
     .title h1 {
-        font-size: 48px;
-    }
-
-    .contactPageSubtitle {
-        font-size: 12px;
+        font-size: 55px;
     }
 
     .lineContainer {
@@ -97,16 +96,23 @@
     #about .tool ul li{
         width: 30%;
     }
+    
+}
+
+@media (max-width: 706px){
+    .title h1 {
+        font-size: 48px;
+    }
 }
 
 /* ******BELOW615px*******/
 @media (max-width: 615px) {
     html {
-        font-size: 48%;
+        font-size: 50%;
     }
 
     .title h1 {
-        font-size: 38px;
+        font-size: 45px;
     }
 
     .lineContainer {
@@ -145,26 +151,56 @@
 
 }
 
+
+// @media(max-width:580px){
+// glitch-effect {
+//     position: relative;
+//   }
+//   .glitch-effect:before,
+//   .glitch-effect:after {
+//     content: attr(data-text);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     background: #ffffff;
+//     clip: rect(0, 0, 0, 0);
+//   }
+//   .glitch-effect:after {
+//     left: 2px;
+//     text-shadow: -1px 0 #f26b38;
+//     animation: glitch-1 2s infinite linear alternate-reverse;
+//   }
+//   .glitch-effect:before {
+//     left: -2px;
+//     text-shadow: 2px 0 #f26b38;
+//     animation: glitch-2 2s infinite linear alternate-reverse;
+//   }
+// }
+
 /* ******BELOW490px*******/
 @media (max-width: 490px) {
     html {
-        font-size: 33%;
+        font-size: 50%;
     }
 
     .title h1 {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .lineContainer {
 
         .top,
         .bottom {
-            height: .8rem;
+            height: 1.3rem;
         }
 
         .left,
         .right {
-            width: .8rem;
+            width: 1.3rem;
         }
+    }
+    #about .tool ul li{
+        width: 45%;
     }
 }

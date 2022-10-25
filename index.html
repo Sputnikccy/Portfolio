@@ -8,6 +8,7 @@
     <title>Caiyi Chen</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -163,10 +164,10 @@
                 </li>
                 <li class="endOfToolKit">
                     <p>
-                        <span>—— t</span><span>o</span>
+                        <span>— t</span><span>o</span>
                         <span>b</span><span>e</span>
                         <span>c</span><span>o</span><span>n</span><span>t</span><span>i</span><span>n</span><span>u</span><span>e</span><span>d
-                            ——</span>
+                            —</span>
                         <!-- <span>·</span><span>·</span><span>·</span> -->
                     </p>
 
@@ -184,10 +185,11 @@
 
     <section class="projects" id="projects">
         <div class="gifContainer">
-            <img src="./assets/coding kitty3.gif" alt="a kitty is coding">
+            <img src="./assets/coding kitty3_250.gif" alt="a kitty is coding">
         </div>
         <div class="projectsContainer wrapper">
-            <div class="projectOne project">
+
+            <div class="projectOne project" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                 <div class="projectOneText projectText">
                     <h3>Hyrule World</h3>
                     <h4>JavaScript | REST API | Sass | HTML</h4>
@@ -195,6 +197,12 @@
                         This pair-programmed application allows users to choose different categories and get detailed
                         information of the lovely creatures and cool stuffs in Hyrule based on their choice. </p>
 
+                </div>
+                <div class="projectDemo">
+                    <div class="projectOneImg projectImag">
+                        <img src="./assets/zelda2.png" alt="Desktop and mobile preview of Hyrule World">
+                    </div>
+
                     <div class="projectLink">
                         <a href="https://zelda-app.netlify.app/" class="button">
                             <i class="fa-solid fa-eye"></i>
@@ -205,19 +213,24 @@
                             <span>GitHub</span>
                         </a>
                     </div>
+                </div><!-- projectDemo end -->
 
-                </div>
-                <div class="projectOneImg projectImag">
-                    <img src="./assets/zelda2.png" alt="Desktop and mobile preview of Hyrule World">
-                </div>
             </div> <!-- projectOne end -->
-            <div class="projectTwo project">
+            
+
+            <div class="projectTwo project" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                 <div class="projectTwoText projectText">
                     <h3>Beach Stay</h3>
                     <h4>JavaScript | Sass | HTML</h4>
                     <p>A conversion of a PSD design into a multi-page and responsive website, following a provided style
                         guide and file-naming conventions </p>
 
+                </div>
+                <div class="projectDemo">
+                    <div class="projectTwoImg projectImag">
+                        <img src="./assets/beach.png" alt="Desktop and mobile preview of Beach Stay">
+                    </div>
+
                     <div class="projectLink">
                         <a href="https://zelda-app.netlify.app/" class="button">
                             <i class="fa-solid fa-eye"></i>
@@ -228,20 +241,23 @@
                             <span>GitHub</span>
                         </a>
                     </div>
-
-                </div>
-                <div class="projectTwoImg projectImag">
-                    <img src="./assets/beach.png" alt="Desktop and mobile preview of Beach Stay">
-                </div>
-
+                </div><!-- projectDemo end -->
             </div> <!-- projectTwo end -->
-            <div class="projectThree project">
+
+            <div class="projectThree project" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
                 <div class="projectThreeText projectText">
                     <h3>One Magazine</h3>
                     <h4>JavaScript | Sass | HTML</h4>
                     <p>A conversion of a PSD design into a multi-page and responsive website, following a provided style
                         guide and file-naming conventions </p>
 
+                </div>
+
+                <div class="projectDemo">
+                    <div class="projectThreeImg projectImag">
+                        <img src="./assets/oneMagazine.png" alt="Desktop and mobile preview of One Magazine">
+                    </div>
+
                     <div class="projectLink">
                         <a href="https://zelda-app.netlify.app/" class="button">
                             <i class="fa-solid fa-eye"></i>
@@ -252,11 +268,8 @@
                             <span>GitHub</span>
                         </a>
                     </div>
-
-                </div>
-                <div class="projectThreeImg projectImag">
-                    <img src="./assets/oneMagazine.png" alt="Desktop and mobile preview of One Magazine">
-                </div>
+                </div><!-- projectDemo end -->
+               
 
             </div> <!-- projectThree end -->
 
@@ -337,10 +350,12 @@
 
 
 
-    <script src="./scripts/homeHeader.js"></script>
-    <script src="./scripts/aboutAnimation.js"></script>
-    <script src="./scripts/topMenuColorChange.js"></script>
-    <script src="./scripts/hamburgerMenu.js"></script>
+    <script src="./scripts/homeHeader.js"></script>;
+    <script src="./scripts/aboutAnimation.js"></script>;
+    <script src="./scripts/topMenuColorChange.js"></script>;
+    <script src="./scripts/hamburgerMenu.js"></script>;
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+    <script src="./scripts/projectsAnimation.js"></script>
 </body>
 
 </html>

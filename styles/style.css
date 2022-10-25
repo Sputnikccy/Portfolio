@@ -286,6 +286,10 @@ html {
   font-family: "Robot Mono Bold";
   src: url(../fonts/Roboto_Mono/static/RobotoMono-Bold.ttf);
 }
+body {
+  background-color: rgb(249, 248, 246);
+}
+
 .wrapper {
   max-width: 1260px;
   width: 78%;
@@ -301,7 +305,7 @@ input {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   line-height: 2.3rem;
   padding: 0;
   font-family: "Robot Mono Regular";
@@ -314,7 +318,7 @@ h2, h3, h4 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
 }
 
 h3 {
@@ -322,7 +326,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 a {
@@ -367,7 +371,7 @@ header {
   width: 100%;
   z-index: 100;
   height: 20vh;
-  background-color: white;
+  background-color: rgb(249, 248, 246);
 }
 header .topMenuContainer {
   padding-top: 9rem;
@@ -398,7 +402,7 @@ header .topMenuContainer .color {
 }
 .mobileHeader .hamburger i {
   color: #363636;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .title {
@@ -1135,7 +1139,7 @@ header .topMenuContainer .color {
   color: #f26b38;
 }
 #about .tool ul li i {
-  font-size: 5rem;
+  font-size: 7rem;
   color: #363636;
 }
 #about .tool ul .endOfToolKit {
@@ -1221,24 +1225,60 @@ header .topMenuContainer .color {
   text-align: center;
   margin: 1rem auto;
 }
+.projects .projectsContainer .projectOne {
+  margin-top: 1rem;
+}
+.projects .projectsContainer .projectOne .projectOneText {
+  -webkit-box-flex: 1.4;
+      -ms-flex: 1.4;
+          flex: 1.4;
+}
+.projects .projectsContainer .projectOne .projectDemo {
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
+}
+.projects .projectsContainer .projectLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projects .projectsContainer .projectLink a {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4rem;
+}
+.projects .projectsContainer .projectLink a:nth-child(1) {
+  margin-right: 1rem;
+  padding: 0 2.2rem;
+}
+.projects .projectsContainer .projectLink a i {
+  margin-right: 0.3rem;
+  font-size: 1.5rem;
+}
 .projects .projectsContainer .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(252, 242, 231);
-  border: 0px solid rgb(252, 242, 231);
   border-radius: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 .projects .projectsContainer .project .projectImg {
   text-align: center;
@@ -1250,8 +1290,8 @@ header .topMenuContainer .color {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
 }
 .projects .projectsContainer .project .projectImg img {
   max-width: 100%;
@@ -1263,7 +1303,7 @@ header .topMenuContainer .color {
   margin-top: 3rem;
 }
 .projects .projectsContainer .project .projectText {
-  text-align: center;
+  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1285,35 +1325,6 @@ header .topMenuContainer .color {
 .projects .projectsContainer .project .projectText p {
   padding: 0 5rem;
 }
-.projects .projectsContainer .project .projectText .projectLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.projects .projectsContainer .project .projectText .projectLink a {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 4rem;
-}
-.projects .projectsContainer .project .projectText .projectLink a:nth-child(1) {
-  margin-right: 1rem;
-  padding: 0 2.2rem;
-}
-.projects .projectsContainer .project .projectText .projectLink a i {
-  margin-right: 0.3rem;
-  font-size: 1.5rem;
-}
 
 /* ******BELOW1280px*******/
 @media (max-width: 1280px) {
@@ -1327,7 +1338,7 @@ header .topMenuContainer .color {
 /* ******BELOW820px*******/
 @media (max-width: 820px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
   .mobileHeader {
     display: block;
@@ -1368,22 +1379,25 @@ header .topMenuContainer .color {
     display: none;
   }
   #about {
-    scroll-margin-top: 0;
+    scroll-margin-top: 10vh;
   }
   #contactContent .contactInfo .contactForm {
     margin-top: -4%;
+  }
+  .projects .projectsContainer .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /* ******BELOW750px*******/
 @media (max-width: 750px) {
   html {
-    font-size: 52%;
+    font-size: 56%;
   }
   .title h1 {
-    font-size: 48px;
-  }
-  .contactPageSubtitle {
-    font-size: 12px;
+    font-size: 55px;
   }
   .lineContainer .top,
 .lineContainer .bottom {
@@ -1397,13 +1411,18 @@ header .topMenuContainer .color {
     width: 30%;
   }
 }
+@media (max-width: 706px) {
+  .title h1 {
+    font-size: 48px;
+  }
+}
 /* ******BELOW615px*******/
 @media (max-width: 615px) {
   html {
-    font-size: 48%;
+    font-size: 50%;
   }
   .title h1 {
-    font-size: 38px;
+    font-size: 45px;
   }
   .lineContainer .top,
 .lineContainer .bottom {
@@ -1436,17 +1455,20 @@ header .topMenuContainer .color {
 /* ******BELOW490px*******/
 @media (max-width: 490px) {
   html {
-    font-size: 33%;
+    font-size: 50%;
   }
   .title h1 {
-    font-size: 28px;
+    font-size: 40px;
   }
   .lineContainer .top,
 .lineContainer .bottom {
-    height: 0.8rem;
+    height: 1.3rem;
   }
   .lineContainer .left,
 .lineContainer .right {
-    width: 0.8rem;
+    width: 1.3rem;
+  }
+  #about .tool ul li {
+    width: 45%;
   }
 }
