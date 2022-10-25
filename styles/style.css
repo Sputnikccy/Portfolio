@@ -861,6 +861,7 @@ header .topMenuContainer .color {
       -ms-flex-direction: column;
           flex-direction: column;
   scroll-margin-top: 24vh;
+  margin-top: 4rem;
 }
 #contactContent #contactInfoTitle h2 {
   -webkit-box-shadow: inset 0 -0.6rem 0px #ede574;
@@ -978,6 +979,7 @@ header .topMenuContainer .color {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 5.5rem;
 }
 #about h2 {
   -webkit-box-shadow: inset 0 -0.6rem 0px #ede574;
@@ -1151,6 +1153,7 @@ header .topMenuContainer .color {
   color: #f26b38;
   font-family: "Robot Mono Bold";
   font-size: 1.5rem;
+  white-space: nowrap;
 }
 #about .tool ul .endOfToolKit .loader {
   display: -webkit-box;
@@ -1322,6 +1325,9 @@ header .topMenuContainer .color {
   padding-top: 1rem;
   margin-bottom: 0;
 }
+.projects .projectsContainer .project .projectText h4 {
+  text-align: center;
+}
 .projects .projectsContainer .project .projectText p {
   padding: 0 5rem;
 }
@@ -1374,6 +1380,7 @@ header .topMenuContainer .color {
   .mobileHeader .show .mobileTopMenuContainer li a {
     -webkit-box-shadow: inset 0 -0.4rem 0px #ede574;
             box-shadow: inset 0 -0.4rem 0px #ede574;
+    color: #363636;
   }
   header {
     display: none;
@@ -1415,6 +1422,90 @@ header .topMenuContainer .color {
   .title h1 {
     font-size: 48px;
   }
+  @-webkit-keyframes left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(3rem);
+              transform: translateX(3rem);
+      transform: translateX(3rem);
+      opacity: 1;
+    }
+  }
+  @keyframes left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(3rem);
+              transform: translateX(3rem);
+      transform: translateX(3rem);
+      opacity: 1;
+    }
+  }
+  @keyframes left {
+    0% {
+      -webkit-transform: translateX(-3rem);
+              transform: translateX(-3rem);
+      transform: translateX(-3rem);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(-3rem);
+              transform: translateX(-3rem);
+      transform: translateX(-3rem);
+      opacity: 1;
+    }
+  }
+  @keyframes right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(-3rem);
+              transform: translateX(-3rem);
+      transform: translateX(-3rem);
+      opacity: 1;
+    }
+  }
+  @keyframes right {
+    0% {
+      -webkit-transform: translateX(3rem);
+              transform: translateX(3rem);
+      transform: translateX(3rem);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }
 /* ******BELOW615px*******/
 @media (max-width: 615px) {
@@ -1450,6 +1541,13 @@ header .topMenuContainer .color {
        object-fit: cover;
     border-radius: 50%;
     border: 0.5rem solid #f26b38;
+  }
+  #projects .projectsContainer .project .projectText p {
+    padding: 0;
+    text-align: center;
+  }
+  .title h1::after {
+    content: "";
   }
 }
 /* ******BELOW490px*******/
