@@ -1,0 +1,190 @@
+@use "variables" as *;
+#about {
+    scroll-margin-top: 24vh;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        box-shadow: inset 0 -.6rem 0px #ede574;
+        display: inline-block;
+    }
+
+    .aboutIntro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+
+
+        .aboutImg {
+            margin-right: 3rem;
+            height: 100%;
+            flex: 0.8;
+            object-fit: cover;
+            box-shadow: .6rem .6rem .1rem .2rem $primary;
+
+            img {
+
+                max-height: 100%;
+            }
+        }
+
+        .leftAnimation {
+            animation: left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes left {
+            0% {
+                transform: translateX(0);
+                transform: translateX(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(10rem);
+                transform: translateX(10rem);
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes left {
+            0% {
+                transform: translateX(-10rem);
+                transform: translateX(-10rem);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .aboutText {
+            flex: 2.2;
+        }
+
+        .rightAnimation {
+            animation: right 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes right {
+            0% {
+                transform: translateX(0);
+                transform: translateX(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(-10rem);
+                transform: translateX(-10rem);
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes right {
+            0% {
+                transform: translateX(10rem);
+                transform: translateX(10rem);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    .tool {
+        margin-top: 4rem;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(252, 242, 231);
+            margin-top: 2rem;
+            border: 0px solid rgb(252, 242, 231);
+            border-radius: 2rem;
+    
+
+            li {
+                margin-top: 4rem;
+                text-align: center;
+                width: 25%;
+                transition: .4s;
+
+                &:hover,
+                &:active {
+                    color: $primary;
+
+                    i {
+                        color: $primary;
+                    }
+                }
+
+                i {
+                    font-size: 5rem;
+                    color: $secondary;
+                }
+
+            }
+
+            .endOfToolKit {
+                text-align: center;
+                margin: 1rem auto;
+
+                p {
+                    text-transform: uppercase;
+                    color: $primary;
+                    font-family: $titleFont;
+                    font-size: 1.5rem;
+                }
+
+                .loader {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+
+                    .circle {
+                        width: 1rem;
+                        height: 1rem;
+                        background: $primary;
+                        border-radius: 50%;
+                        margin-right: .5rem;
+                        animation: jump 1.2s linear infinite;
+
+                        &:nth-child(2) {
+                            animation-delay: -1.1s;
+                        }
+
+                        &:nth-child(3) {
+                            animation-delay: -0.9s;
+                        }
+                    }
+
+                    @keyframes jump {
+
+                        0%,
+                        60%,
+                        100% {
+                            transform: initial;
+
+                        }
+
+                        35% {
+                            transform: translateY(-.7rem)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="contactMainPage">
+        <header>
+            <nav class="topMenu">
+                <ul class="topMenuContainer">
+                    <li><a href="./index.html" class="first">Home</a></li>
+                    <li><a href="./index.html#about" class="second">About</a></li>
+                    <li><a href="./index.html#projects" class="third">Projects</a></li>
+                    <li><a href="#" class="forth">Contact</a></li>
+                </ul>
+            </nav> <!-- nav end -->
+        </header><!-- header end -->
+
+        <div class="mobileHeader">
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button> <!-- hamburger end -->
+            <nav class="mobileTopMenu">
+                <ul class="mobileTopMenuContainer">
+                </ul>
+            </nav><!-- nav end -->
+        </div><!-- mobileHeader end -->
+
+        <div class="title">
+            <h1 data-text="Contact">Contact</h1>
+            <div class="contactPageSubtitle">
+                <span class="contactWord"></span>
+                <span class="sr-only">
+                    Thanks For Stopping By! I'd Love To Hear From You!
+                </span>
+                <span class="line">|</span>
+            </div>
+        </div><!-- title end -->
+
+        <div class="arrow">
+            <a href="#contactContent" class="anchor">
+                <div class="arrowContainer">
+                    <span class="sr-only">Go to Contact Information</span>
+                    <img src="./assets/arrow.png" alt="a downward arrow">
+                </div>
+            </a>
+        </div><!-- arrow end -->
+    </div>
+
+    <div id="contactContent" class="wrapper">
+        <div id="contactInfoTitle">
+            <h2>Get In Touch!</h2>
+        </div> <!-- contactInfoTitle end -->
+        <div class="contactIntro">
+            <p>
+                If you want to have a quick chat over a virtual/in-person coffee chat (or bubble tea if you're in the
+                mood) - you can send a message to me on here or book a meeting with me on
+                <a href="#" class="calendly">Calendly</a>. Click here to book a
+                timeslot. </br>
+                Alternatively, you can get in contact with me via the following options below!
+            </p>
+        </div> <!-- contactIntro end -->
+        <div class="contactInfo">
+            <div class="contactIconContainer">
+                <div class="icon linkedIn">
+                    <a href="https://www.linkedin.com/in/caiyi-chen-b21898244/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <span class="sr-only">
+                        <a href="https://www.linkedin.com/in/caiyi-chen-b21898244/">LinkedIn Page</a>
+                    </span>
+                </div>
+                <div class="icon gitHub">
+                    <a href="https://github.com/Sputnikccy">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <span class="sr-only">
+                        <a href="https://github.com/Sputnikccy">GitHub Page</a>
+                    </span>
+                </div>
+                <div class="icon medium">
+                    <a href="https://medium.com/@plutoccy">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                    <span class="sr-only">
+                        <a href="https://medium.com/@plutoccy">Medium Page</a>
+                    </span>
+                </div>
+
+            </div>
+            <div class="contactForm">
+                <div class="formContainer">
+                    <form action="https://formsubmit.co/aeee86ef33924e734348b1135651ef94" method="POST">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="emailAddress" class="sr-only">Email Address</label>
+                        <input type="email" id="emailAddress" placeholder="Email address">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" rows="10" cols="30" placeholder="Message"></textarea>
+                        <button type="submit" class="button" id="userSubmit">submit</button>
+                    </form>
+                </div><!-- formContainer end -->
+            </div><!-- contactForm end -->
+        </div> <!-- contactInfo end -->
+    </div><!-- contactContent end -->
+
+
+    <div class="lineContainer">
+        <div class="line top"></div>
+        <div class="line bottom"></div>
+        <div class="line left"></div>
+        <div class="line right"></div>
+    </div><!-- lineContainer end -->
+
+
+    <script src="./scripts/homeHeader.js"></script>
+    <script src="./scripts/contactHeader.js"></script>
+    <script src="./scripts/contactForm.js"></script>
+    <script src="./scripts/hamburgerMenu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@use "variables" as *;
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Robot Mono Regular';
+    src: url(../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Robot Mono Bold';
+    src: url(../fonts/Roboto_Mono/static/RobotoMono-Bold.ttf);
+}
+
+

@@ -1,0 +1,138 @@
+@use "variables" as *;
+
+.contactMainPage {
+    height: 100vh;
+    margin-bottom: 10%;
+
+    header {
+        .topMenuContainer {
+            .first {
+                color: $secondary;
+            }
+
+            .forth {
+                color: $primary
+            }
+        }
+    }
+}
+
+#contactContent {
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 24vh;
+
+
+    #contactInfoTitle {
+        h2 {
+            box-shadow: inset 0 -.6rem 0px #ede574;
+            display: inline-block;
+        }
+    }
+
+    .contactIntro {
+       
+        .calendly {
+            border-bottom: 2px solid $primary;
+            font: 1.4rem $titleFont;
+        }
+    }
+
+    .contactInfo {
+        margin-top: 4%;
+        display: flex;
+        flex-direction: column;
+        bottom: 2.5rem;
+        transition: 0.3s ease;
+       
+        &:hover,
+        &:focus {
+            transform: scale(0.98);
+        }
+
+        .contactIconContainer {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 2rem;
+            color: $secondary;
+            font-size: 4rem;
+            background-color: white;
+            z-index: 30;
+
+
+            &:hover,
+            &:focus {
+                animation: icon 1s linear infinite;
+            }
+        }
+
+        @keyframes icon {
+            0% {
+                opacity: 0.8;
+                transform: translate(0, 0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translate(0, 3px);
+            }
+
+            100% {
+                opacity: 0.8;
+                transform: translate(0, 0);
+            }
+        }
+
+        .contactForm {
+            width: 100%;
+            border: 2px solid $primary;
+            border-radius: 4rem;
+            margin-bottom: 8%;
+            margin-top: -3%;
+
+
+            .formContainer {
+
+                form {
+                    height: auto;
+                    padding: 3rem 3rem 2rem 3rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    input,
+                    textarea {
+                        font: 1.4rem $baseFont ;
+                        padding: 2rem;
+                        margin: 1rem 0;
+                    }
+
+                    input {
+                        border-bottom: 1.5px solid lightgrey;
+                    }
+
+                    textarea {
+                        resize: none;
+                        border: none;
+                        border: 1.5px solid lightgrey;
+                        outline: none;
+                    }
+                    .button{
+                        width: 30%;
+                        border-radius: 4rem;
+                        margin: .5rem  auto 0 auto;
+                    }
+
+                }
+            }
+
+
+        }
+
+    }
+}

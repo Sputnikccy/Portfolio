@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+.iconContent {
+  padding: 1.5rem 7rem 4rem 6rem;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+
+  .contactIconContainer {
+    text-align: right;
+
+    .icon {
+      vertical-align: middle;
+      padding: 1rem 0;
+      color: $secondary;
+      font-size: 2rem;
+
+      &:hover,
+      &:focus {
+        animation: icon 1s linear infinite;
+      }
+    }
+
+    @keyframes icon {
+      0% {
+        opacity: 0.8;
+        transform: translate(0, 0);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translate(0, 3px);
+      }
+
+      100% {
+        opacity: 0.8;
+        transform: translate(0, 0);
+      }
+    }
+
+  }
+
+
+}

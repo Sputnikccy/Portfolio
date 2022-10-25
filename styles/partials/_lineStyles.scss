@@ -1,0 +1,47 @@
+@use "variables" as *;
+
+.lineContainer {
+    margin: 0 3rem;
+    overflow: hidden;
+    background: #ffffff;
+
+    .line {
+        content: '';
+        position: fixed;
+        background: $primary;
+        z-index: 105;
+    }
+
+    .top {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2.5rem;
+    }
+
+    .bottom {
+        left: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+    }
+
+    .left {
+        left: 0;
+        top: 0;
+        width: 2.5rem;
+        height: 200%;
+    }
+
+    .right {
+        left:auto;
+        right: 0;
+        top: 0;
+        width: 2.5rem;
+        height: 200%;
+    }
+
+
+
+}
