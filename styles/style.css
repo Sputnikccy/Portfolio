@@ -1241,6 +1241,16 @@ header .topMenuContainer .color {
       -ms-flex: 1.2;
           flex: 1.2;
 }
+.projects .projectsContainer .projectThree .projectThreeText {
+  -webkit-box-flex: 1.4;
+      -ms-flex: 1.4;
+          flex: 1.4;
+}
+.projects .projectsContainer .projectThree .projectDemo {
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
+}
 .projects .projectsContainer .projectLink {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1302,7 +1312,7 @@ header .topMenuContainer .color {
 }
 .projects .projectsContainer .project .projectThreeImg,
 .projects .projectsContainer .project .projectTwoImg {
-  max-width: 85%;
+  max-width: 95%;
   margin-top: 3rem;
 }
 .projects .projectsContainer .project .projectText {
@@ -1327,6 +1337,7 @@ header .topMenuContainer .color {
 }
 .projects .projectsContainer .project .projectText h4 {
   text-align: center;
+  word-wrap: break-word;
 }
 .projects .projectsContainer .project .projectText p {
   padding: 0 5rem;
