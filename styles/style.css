@@ -1251,6 +1251,16 @@ header .topMenuContainer .color {
       -ms-flex: 1.2;
           flex: 1.2;
 }
+.projects .projectsContainer .projectTwo .projectTwoText {
+  -webkit-box-flex: 1.4;
+      -ms-flex: 1.4;
+          flex: 1.4;
+}
+.projects .projectsContainer .projectTwo .projectDemo {
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
+}
 .projects .projectsContainer .projectLink {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1309,11 +1319,6 @@ header .topMenuContainer .color {
 .projects .projectsContainer .project .projectImg img {
   max-width: 100%;
   height: auto;
-}
-.projects .projectsContainer .project .projectThreeImg,
-.projects .projectsContainer .project .projectTwoImg {
-  max-width: 95%;
-  margin-top: 3rem;
 }
 .projects .projectsContainer .project .projectText {
   text-align: left;
